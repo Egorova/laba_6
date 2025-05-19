@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск изображений</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="assets/fonts/CormorantInfant-Medium.ttf" as="font" type="font/ttf" crossorigin>
+</head>
+<body>
+    <div class="background-layer bottom-layer"></div>
+    <main>
+        <div class="app">
+            <div id="initialView">
+                <h1>Введите запрос</h1>
+                <div class="search-container">
+                    <input class="srch" type="text" id="keywordInput" placeholder="Например: котенок...">
+                    <button class="srhbtn" id="searchButton">Найти</button>
+                </div>
+            </div>
+            <div id="resultView" class="hidden">
+                <h1 id="resultTitle"></h1>
+                <div class="image-container" id="outputImage"></div>
+                <p class="source">Источник: <a id="sourceLink" href="#" target="_blank"></a></p>
+            </div>
+            <div class="rating-buttons hidden" id="ratingButtons">
+                <button class="like-btn">👍</button>
+                <button class="dislike-btn">👎</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
